@@ -1,0 +1,182 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.header{
+    background-color: $color-white;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    z-index: 3;
+    .logo{
+        width: 20%;
+        margin-left: 15px;
+        position: fixed;
+        z-index: 2;
+        top: -8px;
+    }
+    .icon-menu{
+        display: block;
+        font-size: 25px;
+        text-align: right;
+        margin-right: 15px;
+        margin-top: 15px;
+        color: #00004d;
+    }
+    .check-icon{
+        display: none;
+    }
+
+    .menu-mobile{
+        background-color:  #001a33;
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 15;
+        display: none;
+
+        .cross{
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            z-index: 15;
+            display: none;
+            
+            a{
+            font-size: 20px;
+            color: white;
+            }
+        }
+
+        .background{
+            background-color:  #000d1a;     
+            width: 75vw;
+            height: 100vh;
+            margin-top: -16px;
+
+            .menu{ 
+                list-style: none;
+                z-index: 15;
+                padding-top: 30px;
+                
+                li{
+                    font-family: 'Montserrat', sans-serif;
+                    color: $color-white;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin-left: -19px;
+                    padding: 10px;
+                    
+                    a{  
+                        text-decoration: none;
+                        font-family: 'Montserrat', sans-serif;
+                        color: $color-white;
+                        font-size: 15px;
+                        font-weight: 400;
+                                                
+                    }
+                    a:hover {
+                        color: #74b5fc;
+                        transition: 0.5s all ease-in-out;
+                    }
+                }
+ 
+                .first-drop-mobile{
+                    position: relative;
+                    margin-left: -10;
+                    list-style-type: none;
+                    bottom: -20px;
+                    max-height: 0;
+                    transition: max-height 0.2s ease;
+                    display: none;
+                }
+                
+                .checkbox-1{
+                    display: none;
+                }
+                .bttn-drop{
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    color: #fff;
+                    left: 90px;
+                    
+                }
+                .bttn-drop:hover{
+                    color: #74b5fc;
+                    transition: 0.9s;
+                    transform: rotateX(180deg);
+                }
+            
+                .checkbox-1:checked + .dropdown-content-mobile-1>.first-drop-mobile{
+                    max-height: 429px;
+                    transition: max-height 0.2s ease;
+                    display: block;
+                }
+
+                .second-drop-mobile{
+                    position: relative;
+                    padding-left: -28px;
+                    list-style-type: none;
+                    bottom: -20px;
+                    max-height: 0;
+                    transition: max-height 0.2s ease;
+                    display: none;
+                    li{
+                        top: -20px;
+                    }
+                }
+
+                .checkbox-2{
+                    display: none;
+                }
+
+                .bttn-drop-2{
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    color: #fff;
+                    left: 75px;
+                    top: 0px;
+                }
+                .bttn-drop-2:hover{
+                    color: #74b5fc;
+                    transition: 0.9s;
+                    transform: rotateX(180deg);
+                }
+                .checkbox-2:checked + .dropdown-content-mobile-2>.second-drop-mobile{
+                    max-height: 429px;
+                    transition: max-height 0.2s ease;
+                    display: block;
+                }
+            }
+        }
+    }
+    #check-icon:checked + .menu-mobile{
+        display: block;
+        transition: 0.3s;
+    }
+}
+@include desktop {
+    .menu-mobile{
+        display: none;
+    }
+    .header{
+        .menu{
+            display: block;
+        }
+        .icon-menu{
+            display: none;
+        }
+        .logo{
+            width: 5.5%;
+            padding: 24px;
+            float: left;
+            margin-left: 80px;
+            top: -10px;
+        }
+    }
+}

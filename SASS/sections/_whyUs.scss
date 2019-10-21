@@ -1,0 +1,78 @@
+@import "../common/variables";
+.why-us-sec{
+    @import url(../components/_cards.scss);
+    background-color: $color-background;
+    color: $color-white;
+    .why-us-header{
+        h2{
+            padding: 40px;
+            text-align: center;
+            font-size: $why-us-header-title;
+            font-weight: 500;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 200;
+            margin-top: -15px;
+            line-height: 1.5;
+        }
+    }
+    .cards-sections{
+    @import url(../components/_cards.scss);
+        
+        .why-us-cards{
+        background-color: #00458f;
+        margin: 25px;
+        border-radius: 4%;
+        box-sizing: border-box;
+            .why-us-icons{
+                font-size: 45px;
+                opacity: 0.7;
+                text-align: center;
+                margin: 15px;
+            }
+            .why-us-cards-content{
+                text-align: center;
+                padding: 15px;
+                h3{
+                    font-size: 22px;
+                }
+                p{
+                    line-height: 1.5;
+                    opacity: 0.9;
+                    font-size: 16px;
+                    margin: 20px;
+                }
+                a{
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: $color-white;
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+        }
+        .nrs-sections{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 35px;
+            .why-us-numbers{
+                margin: 10px;
+
+                span{
+                    font-size: 48px;
+                    font-weight: 700;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 200;
+                    text-align: center;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

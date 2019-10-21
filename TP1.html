@@ -1,52 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="estilos/TP1.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500i&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="estilos/main.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="estilos/styles.css">
+    <link href="img/favicon.png" rel="icon">
     <title>Wayne Enterprises</title>
 </head>
 <body>
-     <!--=================================================================================================================
+    <!--=================================================================================================================
                                               HEADER 
     ==================================================================================================================-->
-   <header>
-        <div class="navbar">
-            <div class="logo"> 
-                    <img src="../TP1/imgs/logo-tp.png">
-                <div class="menu-icon">  
-                    <label  for="toggle">&#9776;</label>
-                    <input  type="checkbox" id="toggle"/>
-                <div>
-            </div>
+  <header class="header"> 
+      <div class="nav-bar">
+            <img src="../TP1/imgs/logo-tp.png" class="logo">
+           <label class="icon-menu" for="check-icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" class="check-icon" id="check-icon">
+      </div>
+
             <div class="menu">
-                <ul>
+                <ul class="main-menu">
                     <li><a href="#" id="#Home">Home</a></li>
                     <li><a href="#" id="#About">About Us</a></li>
                     <li><a href="#" id="#Services">Services</a></li>
                     <li><a href="#" id="Portfolio">Portfolio</a></li>
                     <li><a href="#Team">Team</a></li>
-                    <li><a href="#">Drop Down
-                        <nav class="dropdown">
-                            <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                                <li><a href="#">Drop Down 5</a></li>
-                            </ul>
-                            </a></li>
-                        </nav>
-                    <li><a href="#" id="#Contact">Contact us</a></li>
+                    <nav class="dropdown">
+                        <li class="dropdown">Drop Down
+                            <nav class="dropdown-content1">
+                                <ul class="first-drop">
+                                    <li><a href="#">Drop Down 1</a></li>
+                                    <nav class="dropdown2">
+                                        <li class="dropdown1">Drop Down 2 
+                                            <span class="dropdown-content2">
+                                                <ul class="second-drop">
+                                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                                </ul></li>
+                                            </span>
+                                    </nav>
+                                    <li><a href="#">Drop Down 3</a></li>
+                                    <li><a href="#">Drop Down 4</a></li>
+                                    <li><a href="#">Drop Down 5</a></li>
+                                </ul>
+                                    </a></li>
+                            </nav>
+                    </nav>
+                        <li><a href="#" id="#Contact" class="contact">Contact us</a></li>
                 </ul>
             </div>
-        </div>
-    </header> 
+            
+            <div id="menu-mobile" class="menu-mobile">
+                <div class="cross">
+                    <a href="#home">
+                        <span class="iconify" data-icon="icomoon-free:cross" data-inline="false"></span>
+                    </a>
+                </div>
+                <div class="background">            
+                    <ul class="menu">
+                        <li><a href="#Home" id="Home">Home</a></li>
+                        <li><a href="#About" id="#About">About Us</a></li>
+                        <li><a href="#Services" id="#Services">Services</a></li>
+                        <li><a href="#Portfolio" id="Portfolio">Portfolio</a></li>
+                        <li><a href="#Team">Team</a></li>   
+                        <li>Drop Down
+                            <label for="checkbox-1">
+                                <span class="bttn-drop">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </label>
+                                <input type="checkbox" class="checkbox-1" id="checkbox-1" />
+
+                        <nav class="dropdown-content-mobile-1">
+                            <ul class="first-drop-mobile">
+                                <li><a href="#">Drop Down 1</a></li>
+
+                            <nav>
+                                <li>Drop Down 2
+                                <label for="checkbox-2" class="bttn-drop-2">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </label>
+                                    <input type="checkbox" class="checkbox-2" id="checkbox-2" />
+                        
+                                    <span class="dropdown-content-mobile-2">
+                                        <ul class="second-drop-mobile">
+                                            <li><a href="#">Deep Dropdown 1</a></li>
+                                            <li><a href="#">Deep Dropdown 2</a></li>
+                                            <li><a href="#">Deep Dropdown 3</a></li>
+                                            <li><a href="#">Deep Dropdown 4</a></li>
+                                            <li><a href="#">Deep Dropdown 5</a></li>
+                                        </ul></li>
+                                    </span>
+                            </nav>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Drop Down 5</a></li>
+                        </ul>
+                        </a></li>
+                    </nav>
+                        <li><a href="#" id="#Contact" class="contact">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
                         <!--------------------------------------------------------------------
                                                  INTRO SECTION 
                         ---------------------------------------------------------------------->
@@ -55,8 +118,9 @@
                 <div>
                     <img src="../TP1/imgs/intro-img.png">
                 </div>
+                <div class="content-hero">
                     <div>
-                        <h2>We provide <br> <span>solutions</span> <br> for your bussines!</h2>
+                        <h2>We provide <br><span>solutions</span> for your bussines!</h2>
                     </div>
                     <div class="buttons">
                         <button type="button" class="bttn-get-started"><a href="#About" id="#About">Get Started</a></button>
@@ -69,7 +133,7 @@
                     ------------------------------------------------------------------------->
         <section class="About-us-sec" id="About">
             <header class="about"> 
-                <h3> About Us</h3>
+                <h2> About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                     ut labore et dolore magna aliqua.</p>
             </header>
@@ -117,260 +181,181 @@
                         </div>
                     <div>
                         <img src="../TP1/imgs/about-extra-1.png">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. 
-                            Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.</p>
-                        <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem 
-                            expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.</p>
+                        <div class="about-content-2">
+                            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                            <p>Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae 
+                                perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia 
+                                recusandae non ad at et a.</p>
+                            <p>Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea 
+                                corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus 
+                                quia sit. Porro rerum eum eum.</p>
+                        </div>
                     </div>
                     <div>
                         <img src="../TP1/imgs/about-extra-2.png">
-                        <h3>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h3>
-                        <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut 
-                            distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.</p>
-                        <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero 
-                            nisi vitae debitis. Dolorem cupiditate est perferendis iusto.</p>
-                        <p> Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem 
-                            nam accusantium provident quia.</p>
+                        <div class="about-content-2">
+                            <h3>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h3>
+                            <p>Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. 
+                                Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus 
+                                corporis autem at blanditiis beatae incidunt sunt.</p>
+                            <p>Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse 
+                                molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.</p>
+                            <p> Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est
+                                aut fuga mollitia exercitationem nam accusantium provident quia.</p>
+                        </div>
                     </div>
                 </div>
         </section>
                     <!----------------------------------------------------------------------
                                               SERVICES SECTION
                     ------------------------------------------------------------------------>
-        <section id="Services">
-            <header> <h1> Services </h1>
-                <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p></header>
-            <div class="cards-services">
-                <div>
-                    <span class="iconify" data-icon="ion-ios-analytics-outline" data-inline="false"></span>
-                    <h2>Lorem Ipsum</h2>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+        <section id="Services" class="services-sec">
+            <header>
+                <div class="services-header"> 
+                    <h2> Services </h2>
+                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant 
+                        vituperatoribus.</p>
                 </div>
-                <div>
-                    <span class="iconify" data-icon="ion-ios-bookmarks-outline" data-inline="false"></span>
-                    <h2>Dolor Sistema</h2>
-                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </header>
+            <div class="cards-sections">
+                <div class="cards">
+                    <div class="services-icon analytics">
+                        <span class="iconify" data-icon="ion-ios-analytics-outline" data-inline="false"></span>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Lorem Ipsum</a>
+                        </h3>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
+                            cupiditate non provident</p>
+                    </div>
                 </div>
-                <div>
-                    <span class="iconify" data-icon="ion-ios-paper-outline" data-inline="false"></span>
-                    <h2>Sed ut perspiciatis</h2>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <div class="cards">
+                    <div class="bookmarks services-icon">
+                        <span class="iconify" data-icon="ion-ios-bookmarks-outline" data-inline="false"></span>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Dolor Sistema</a>
+                        </h3>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 
+                            tarad limino ata</p>
+                    </div>
                 </div>
-                <div>
-                    <span class="iconify" data-icon="ion-ios-speedometer-outline" data-inline="false"></span>
-                    <h2>Magni Dolores</h2>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <div class="cards">
+                    <div class="paper services-icon">
+                        <span class="iconify" data-icon="ion-ios-paper-outline" data-inline="false"></span>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Sed ut perspiciatis</a>
+                        </h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                            pariatur</p>
+                    </div>
                 </div>
-                <div>
-                    <span class="iconify" data-icon="et:global" data-inline="false"></span>
-                    <h2>Nemo Enim</h2>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                <div class="cards">
+                    <div class="speedometer services-icon">
+                        <span class="iconify" data-icon="ion-ios-speedometer-outline" data-inline="false"></span>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Magni Dolores</a>
+                        </h3>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                            anim id 
+                            est laborum</p>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa fa-clock-o"></i>
-                    <h2>Eiusmod Tempor</h2>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                <div class="cards">
+                    <div class="global services-icon">
+                        <span class="iconify" data-icon="et:global" data-inline="false"></span>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Nemo Enim</a>
+                        </h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
+                            voluptatum deleniti atque</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="clock services-icon">
+                        <span class="iconify" data-icon="bytesize:clock" data-inline="false"></span>
+                    </div>
+                    <div>
+                        <h3>
+                            <a href="#">Eiusmod Tempor</a>
+                        </h3>
+                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+                            est eligendi</p>
+                    </div>
                 </div>
             </div>
         </section>
                     <!----------------------------------------------------------------------
                                             WHY US SECTION
                     ----------------------------------------------------------------------->
-        <section>
-            <header> <h1>Why Choose Us?</h1>
-                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
-            </header>
-                <div class="cards-why-us">
-                    <div>
-                        <i class="fa fa-diamond"></i>
-                        <h1>Corporis dolorem</h1>
-                        <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <div>
-                        <i class="fa fa-language"></i>
-                        <h1>Voluptates dolores</h1>
-                        <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <div>
-                        <i class="fa fa objet-group"></i>
-                        <h1>Eum ut aspernatur</h1>
-                        <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
-                    </div>
+        <section class="why-us-sec">
+            <header>
+                <div class="why-us-header"> 
+                    <h2>Why Choose Us?</h2>
+                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant 
+                        vituperatoribus.</p>
                 </div>
-                <div>
-                    <div>
+            </header>
+                <div class="cards-sections">
+                    <div class="why-us-cards">
+                        <div class="why-us-icons">
+                            <i class="fa fa-diamond"></i>
+                        </div>
+                        <div class="why-us-cards-content">
+                            <h3>Corporis dolorem</h3>
+                            <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore 
+                                officiis aut voluptatibus.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="why-us-cards">
+                        <div class="why-us-icons">
+                            <i class="fa fa-language"></i>
+                        </div>
+                        <div class="why-us-cards-content">
+                            <h3>Voluptates dolores</h3>
+                            <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="why-us-cards">
+                        <div class="why-us-icons">
+                            <i class="fa fa-object-group"></i>
+                        </div>
+                        <div class="why-us-cards-content">
+                            <h3>Eum ut aspernatur</h3>
+                            <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant 
+                                vituperatoribus.</p>
+                                <a href="#">Read more</a>
+                        </div>
+                    </div>
+                <div class="nrs-sections">
+                    <div class="why-us-numbers">
                         <span>247</span>
                         <p>Clients</p>
                     </div>
-                    <div>
+                    <div class="why-us-numbers">
                         <span>421</span>
                         <p>Projects</p>
                     </div>
-                    <div>
+                    <div class="why-us-numbers">
                         <span>1,364</span>
                         <p>Hours of Support</p>
                     </div>
-                    <div>
+                    <div class="why-us-numbers">
                         <span>18</span>
                         <p>Hard Workers</p>
                     </div>
                 </div>
         </section>
     </main>
-    <section>
-        <header>
-            <h1>Our Portfolio</h1>
-        </header>
-        <div class="flex-li">
-            <ul class="flex-li">
-                <li class="list">ALL</li>
-                <li class="list">APP</li>
-                <li class="list">CARD</li>
-                <li class="list">WEB</li>
-            </ul>
-        </div>
-        <div class="portfolio">
-            <div class="D-APP">
-                <img src="../TP1/portfolio/app1.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/web3.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/app2.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/card1.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/card2.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/card3.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/app3.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/web2.jpg" class="APP">
-            </div>
-            <div class="D-APP">
-                <img src="../TP1/portfolio/web1.jpg" class="APP">
-            </div>
-        </div>
-        <section class="testimonial">
-            <h1>Testimonial</h1>
-            <h2>Saul Goodman</h2>
-            <p>Ceo & Founder</p>
-            <p>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-            </p>
-        </section>
-        <section class="team">
-            <h1>Team</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        <div class="team-1"> 
-             <div>
-                 <img src="../TP1/img/team-01.jpg" class="team-1">
-             </div>
-             <div>
-                 <img src="../TP1/img/team-02.jpg" class="team-1">
-             </div>
-             <div>
-                 <img src="../TP1/img/team-03.jpg" class="team-1">
-             </div>
-             <div>
-                 <img src="../TP1/img/team-04.jpg" class="team-1">
-             </div>
-        </div>
-        </section>
-        <section>
-            <h1>Our Clients</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.
-            </p>
-            <div>
-                <img src="../TP1/img/clients/client-1.png">
-            </div>
-            <div>
-                <img src="../TP1/img/clients/client-2.png">
-            </div>
-            <div>
-                <img src="../TP1/img/clients/client-3.png">
-            </div>
-            <div>
-                <img src="../TP1/img/clients/client-4.png">
-            </div>
-            <div>
-                <img src="../TP1/img/clients/client-5.png">
-            </div>
-            <div>
-                <img src="../TP1/img/clients/client-6.png">
-            </div>
-            <div>
-                <img src="../TP1/img/clients/client-7.png">
-            </div>
-            <div>
-                <img src="../TP1/img/clients/client-8.png">
-            </div>
-        </section>
-        <section>
-            <div class="contact">
-                <h1>Contact Us</h1>
-            </div>
-            <div>
-                <p>A108 Adam Street, NY 535022</p>
-            </div>
-            <div>
-                <p>info@example.com</p>
-            </div>
-            <div>
-                <p>+1 5589 55488 55</p>
-            </div>
-            <form>
-                <div>
-                    <input type="text" name="name" placeholder="Your Name"></imput>
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="Your E-mail"></imput>
-                </div>
-                <div>
-                    <input type="text" name="subjet" placeholder="Subjet"></imput>
-                </div>
-                <div>
-                    <input type="text" name="message" placeholder="Message"></imput>
-                </div>
-            </form>
-        </section>
-        <footer>
-            <div>
-                <h1>Wayne</h1>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
-                    darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-                    fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-            </div>
-            <div>
-                <h1>Useful Links</h1>
-                <ul >
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Service</li>
-                        <li>Terms of service</li>
-                        <li>Privacy policy</li>
-                    </ul>
-            </div>
-            <div>
-                <h1>Contact Us</h1>
-            </div>
-            <div>
-                <h1>Our Newsletter</h1>
-                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
-                    legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            </div>
-        </footer>
 </body>
-
 </html>

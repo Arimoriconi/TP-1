@@ -1,0 +1,106 @@
+@import "../common/mixins";
+.hero{
+    background-image: url(../imgs/intro-bg.png);
+    background-color: #002699;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 560px;
+    transform: translateY(60px);
+    img {
+        width: 75%;
+        display: flex;
+        margin-top: 55px;
+        margin-left: 55px;
+        
+    }
+    .content-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        margin-left: 20px;
+        h2 {
+            display: flex;
+            flex-direction: column;
+            font-size: 32px;
+            text-align: center;
+            font-weight: 800;
+            color: #fff;
+            margin-top: -20px;  
+        }
+        span {
+            text-decoration: underline;
+            color: #66b3ff;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            align-self: center;
+            top: 0;
+            .bttn-get-started {
+                display: flex;
+                border: none;
+                background-color: #0080ff;
+                text-align: center;
+                height: 45px;
+                width: 175px;
+                border-radius: 50px;
+                margin-bottom: 25px;
+                a{
+                    text-decoration: none;
+                    font-weight: 900;
+                    color: #fff;
+                    margin-left: 36px;
+                }
+            }
+            .bttn-services {
+                display: flex;
+                border: solid 2px #fff;
+                background: none;
+                text-align: center;
+                height: 45px;
+                width: 175px;
+                border-radius: 50px;
+            
+                a{
+                    text-decoration: none;
+                    font-weight: 900;
+                    color: #fff;
+                    margin-left: 31px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero{
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 480px;
+        img{
+            align-self: left;
+            width: 50%;
+            margin-right: 0;
+        }
+        h2{
+            font-size: 40px;
+            text-align: left;
+            margin-left: -175px;
+        }
+        .buttons{
+            flex-direction: row;
+            align-self: flex-end;
+            
+            .bttn-get-started{
+                margin: 10px;
+            }
+        }
+    }
+}
