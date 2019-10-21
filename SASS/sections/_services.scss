@@ -1,4 +1,5 @@
 @import "../common/variables";
+@import "../common/mixins";
 .services-sec{
     display: block;
     background-color: $services-background-color;
@@ -60,5 +61,31 @@
             color: $clock-color;
         }
                
+    }
+}
+@include desktop {
+    .services-sec{
+    
+        .services-header{
+            margin: 30px;
+        }
+        .cards-sections{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .cards{
+                width: 400px;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    color: $color-black;
+                }
+                p{
+                    line-height: 1.6;
+                    font-size: 14px;
+                    opacity: 0.8;
+                }
+            }
+        }
     }
 }

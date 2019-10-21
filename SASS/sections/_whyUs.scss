@@ -1,4 +1,5 @@
 @import "../common/variables";
+@import "../common/mixins";
 .why-us-sec{
     @import url(../components/_cards.scss);
     background-color: $color-background;
@@ -74,5 +75,19 @@
                 }
             }
         }
+    }
+}
+
+@include desktop {
+    .cards-sections{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .why-us-cards{
+            width: 275px;
+        }
+    }
+    .why-us-numbers{
+        padding: 40px;
     }
 }
