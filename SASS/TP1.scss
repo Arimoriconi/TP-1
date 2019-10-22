@@ -326,8 +326,10 @@ footer{
     }
 }
 @media (min-width: 2560px){
-    .portfolio{
-        width: 2560px;
+    .portfolio, .container, .team, .container-footer{
+        max-width: 2560px;
+        margin-right: 100px;
+        margin-left: 100px;
        
     }
     .team-1{
