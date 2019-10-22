@@ -1,0 +1,91 @@
+@import "../common/variables";
+@import "../common/mixins";
+.services-sec{
+    display: block;
+    background-color: $services-background-color;
+
+    .services-header{
+        margin: 15px;
+        h2{
+            padding: $title-padding;
+            text-align: center;
+            font-size: $title-header-size;
+            font-weight: 500;
+            opacity: $title-opacity;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+            opacity: 0.6;
+            margin: 15px;
+        }
+    }
+    @import "../components/cards";
+    .cards{
+        display: flex;
+        background-color: $color-white;
+        border-radius: 7%;
+        width: 85%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        box-shadow: border-box;
+        padding: 10px;
+        overflow: hidden;
+        a{
+            text-decoration: none;
+            color: $color-black;
+        }
+        p{
+            line-height: 1.6;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        @import "../common/variables";
+        .analytics{
+            color: $analytics-icon;
+        }
+        .bookmarks{
+            color: $bookmark-color;
+        }
+        .paper{
+            color: $paper-color;
+        }
+        .speedometer{
+            color: $speedometer-color;
+        }
+        .global{
+            color: $global-color;
+            font-size: 55px;
+        }
+        .clock{
+            color: $clock-color;
+        }
+               
+    }
+}
+@include desktop {
+    .services-sec{
+    
+        .services-header{
+            margin: 30px;
+        }
+        .cards-sections{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .cards{
+                width: 400px;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    color: $color-black;
+                }
+                p{
+                    line-height: 1.6;
+                    font-size: 14px;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
