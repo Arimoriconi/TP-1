@@ -16,6 +16,7 @@ body{
 
 .flex-list{
     text-align: center;
+    padding:0;
      .list{
        font-family: "Open Sans", sans-serif;
        font-size: 12px;
@@ -23,7 +24,7 @@ body{
        color: #007bff;
        background: #ecf5ff;
        display: inline-block;
-       margin: 15px 15px 15px 0;
+       margin: 15px 12px 15px 0;
        padding: 6px 20px;
        line-height: 20px;
        cursor: pointer;
@@ -33,6 +34,7 @@ body{
            background: #007bff;
            color: #ecf5ff;
 }
+
 .portfolio{
     display: flex;
     flex-flow: wrap;
@@ -122,6 +124,7 @@ body{
       margin-bottom: 3%;
       background-color: white;
       overflow: hidden;
+      text-align: justify;
     }
 }
 .cliente{
@@ -287,10 +290,13 @@ footer{
          display: inline-flex;
          align-items: baseline;
     }
-    .footer-info, .redes-sociales{
+    .footer-info{
         display: inline-block;
-        width: 49%;
-
+        width: 47%;
+        padding-right: 22px;
+    }
+    .redes-sociales{
+        width: 65%;
     }
 }
 @media (min-width: 1024px){
@@ -324,7 +330,7 @@ footer{
     }
 }
 @media (min-width: 2560px){
-    .portfolio, .container, .team, .container-footer, .container-contact{
+    .container, .team, .container-footer, .container-contact{
        
     }
     .team-1{
