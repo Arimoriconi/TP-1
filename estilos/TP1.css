@@ -132,8 +132,6 @@ body {
   padding-bottom: 3%;
 }
 .clients .container-foto {
-  display: flex;
-  flex-flow: column;
   margin-top: 3%;
   margin-bottom: 3%;
   background-color: white;
@@ -181,6 +179,8 @@ textarea {
 
 .mapa {
   width: 100%;
+  height: 312px;
+  border: 0;
 }
 
 .fa-envelope, .fa-phone-alt, .fa-map-marker-alt {
@@ -197,6 +197,7 @@ textarea {
 .p1 {
   color: #283d50;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .testimonio1 {
@@ -210,6 +211,7 @@ footer {
   background: #004a99;
   padding: 12px;
   font-size: 14px;
+  width: 100%;
 }
 footer .container-footer {
   color: white;
@@ -299,9 +301,90 @@ footer .fotter-list {
 
   .team-1 {
     width: 45%;
+    display: inline-block;
   }
-  .team-1 .team-2 {
-    display: flex;
+
+  .cliente {
+    display: inline-block;
+    width: 18%;
+  }
+
+  .icono {
+    margin-right: 61px;
+    max-width: 54%;
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .footer-info, .redes-sociales {
+    display: inline-block;
+    width: 49%;
+  }
+}
+@media (min-width: 1024px) {
+  .D-APP {
+    width: 30%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .team-1 {
+    width: 21%;
+    display: inline-block;
+  }
+
+  .cliente {
+    display: inline-block;
+    width: 13%;
+  }
+
+  .mapa-1, .contenedor {
+    display: inline-block;
+    max-width: 50%;
+  }
+
+  .icono {
+    margin-right: 61px;
+    max-width: 54%;
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .footer-info, .redes-sociales {
+    display: inline-block;
+    width: 49%;
+  }
+}
+@media (min-width: 2560px) {
+  .portfolio {
+    width: 2560px;
+  }
+
+  .team-1 {
+    width: 21%;
+    display: inline-block;
+  }
+
+  .cliente {
+    display: inline-block;
+    width: 13%;
+  }
+
+  .mapa-1, .contenedor {
+    display: inline-block;
+    max-width: 50%;
+  }
+
+  .icono {
+    margin-right: 61px;
+    max-width: 54%;
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .footer-info, .redes-sociales {
+    display: inline-block;
+    width: 49%;
   }
 }
 
