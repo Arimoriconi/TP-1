@@ -2,6 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
 }
@@ -40,7 +41,6 @@ body {
 .portfolio {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
   padding-bottom: 32px;
   margin: 0px 17px 0;
 }
@@ -56,12 +56,20 @@ body {
   overflow: hidden;
   height: 100%;
 }
+.prueba-app:hover {
+  background: #003166;
+  border-radius: 18px;
+}
 
 .APP {
   border-radius: 18px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.APP:hover {
+  opacity: 0.4;
+  transition: 0.3s;
 }
 
 .container {
@@ -104,7 +112,7 @@ body {
   width: 100%;
 }
 .team .team-info {
-  opacity: 1;
+  opacity: 0;
   position: relative;
   bottom: 240px;
   left: 12px;
@@ -125,6 +133,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: -48px;
+}
+.team-1:hover {
+  background: #003166;
+  border-radius: 1000px;
+}
+.team-1 .team-2:hover {
+  opacity: 0.4;
+  transition: 0.3s;
 }
 
 .clients {
@@ -159,7 +175,7 @@ body {
   font-size: 14px;
   margin-bottom: 19px;
   color: #556877;
-  width: 95%;
+  width: 100%;
   border: 1px solid #ced4da;
   padding: 10px;
 }
@@ -173,8 +189,8 @@ textarea {
   font-family: inherit;
   font-size: 14px;
   margin-bottom: 19px;
-  width: 95%;
-  height: 115px;
+  width: 100%;
+  height: auto;
   border: 1px solid #ced4da;
   padding: 10px;
 }
@@ -237,6 +253,10 @@ footer .p2 {
 }
 footer .fotter-list {
   margin: 13px 0 13px 0;
+}
+
+.contact-form {
+  padding-right: 4%;
 }
 
 .send-message {
@@ -341,7 +361,7 @@ footer .fotter-list {
 
   .cliente {
     display: inline-block;
-    width: 13%;
+    width: 13.7%;
   }
 
   .mapa-1, .contenedor {
@@ -349,19 +369,60 @@ footer .fotter-list {
     max-width: 50%;
   }
 
-  .icono {
-    margin-right: 61px;
-    max-width: 54%;
-    display: inline-flex;
-    align-items: baseline;
+  .conten-info {
+    display: flex;
+    margin-bottom: -47px;
   }
 
-  .footer-info, .redes-sociales {
+  .icono {
+    margin: 0;
+    display: inline-flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .icono .p1 {
+    margin-bottom: 69px;
+  }
+
+  .form-2 {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+  }
+
+  .footer-info {
     display: inline-block;
-    width: 49%;
+    width: 20%;
+    padding: 0;
+  }
+
+  .redes-sociales {
+    width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .container-foto {
+    width: 100%;
+  }
+
+  .cliente {
+    display: inline-block;
+    width: 13.7%;
+  }
+
+  .form-2 {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
   }
 }
 @media (min-width: 2560px) {
+  .D-APP {
+    width: 30%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .team-1 {
     width: 21%;
     display: inline-block;
@@ -369,29 +430,47 @@ footer .fotter-list {
 
   .cliente {
     display: inline-block;
-    width: 21%;
+    width: 22.8%;
   }
 
-  .mapa-1, .contenedor {
-    display: inline-block;
-    max-width: 50%;
+  .container-contact {
+    width: 100%;
   }
-
-  .icono {
-    margin-right: 61px;
-    max-width: 54%;
-    display: inline-flex;
-    align-items: baseline;
-  }
-
-  .footer-info, .redes-sociales {
+  .container-contact .mapa-1, .container-contact .contenedor {
     display: inline-block;
     width: 49%;
   }
 
-  .testimonial, .portfolio, .clients {
-    margin-left: 1000px;
-    margin-right: 1000px;
+  .conten-info {
+    display: flex;
+    margin-bottom: -47px;
+  }
+
+  .icono {
+    margin: 0;
+    display: inline-flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  .icono .p1 {
+    margin-bottom: 69px;
+  }
+
+  .form-2 {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+  }
+
+  .footer-info {
+    display: inline-block;
+    width: 20%;
+    padding: 0;
+  }
+
+  .testimonial {
+    width: 100%;
+    height: 100%;
   }
 }
 
