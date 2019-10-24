@@ -41,10 +41,8 @@ body {
 .portfolio {
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
   padding-bottom: 32px;
   margin: 0px 17px 0;
-  padding: 60px 0;
 }
 
 .D-APP {
@@ -79,7 +77,7 @@ body {
   background: #ecf5ff;
   text-align: center;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 0;
+  padding-top: 10px;
 }
 
 .testimonial {
@@ -108,7 +106,6 @@ body {
 
 .team {
   text-align: center;
-  padding: 60px 0;
 }
 .team .team-info {
   opacity: 0;
@@ -173,7 +170,6 @@ body {
 .container-contact {
   padding-right: 15px;
   padding-left: 15px;
-  padding: 60px 0;
 }
 
 textarea {
@@ -207,7 +203,6 @@ textarea {
   color: #283d50;
   margin-bottom: 40px;
   width: 100%;
-  font-size: 15px;
 }
 
 .testimonio1 {
@@ -399,7 +394,7 @@ footer .fotter-list {
 
   .cliente {
     display: inline-block;
-    width: 11.7%;
+    width: 13.7%;
   }
 
   .form-2 {
@@ -416,7 +411,7 @@ footer .fotter-list {
   }
 
   .team-1 {
-    width: 17%;
+    width: 21%;
     display: inline-block;
   }
 
