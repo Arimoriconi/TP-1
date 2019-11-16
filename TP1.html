@@ -11,13 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
-    <link rel="stylesheet" type="text/css" href="estilos/styles.css">
+    <link rel="stylesheet" type="text/css" href="estilos/main.css">
     <title>Wayne Enterprises</title>
 </head>
 <body>
       <!--=================================================================================================================
                                               HEADER 
     ==================================================================================================================-->
+    <!--
+        Las imagenes se están referenciando, en el html, como "../TP1/imgs/<imagen>" cuando simplemente
+            podrian ser "imgs/<imagen>"
+    -->
    <header>
         <div class="navbar">
             <div class="logo"> 
@@ -73,6 +77,7 @@
         <section class="About-us-sec" id="About">
             <header class="about"> 
                 <h3> About Us</h3>
+                <!--Esto es un subtitulo. Esto deberia ser un h4 en este contexto. Revisar en todas las secciones -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                     ut labore et dolore magna aliqua.</p>
             </header>
@@ -145,6 +150,7 @@
             <header> <h1> Services </h1>
                 <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p></header>
             <div class="cards-services">
+                <!-- podrian ser articles en vez de divs-->
                 <div>
                     <span class="iconify" data-icon="ion-ios-analytics-outline" data-inline="false"></span>
                     <h2>Lorem Ipsum</h2>
@@ -204,6 +210,7 @@
                     </div>
                 </div>
                 <div>
+                    <!--Los <p> aca dentro deberian ser tambien SPAN. No cumplen funcion de parrafo.Ademas son parte del mismo texto que los numeros -->
                     <div>
                         <span>247</span>
                         <p>Clients</p>
@@ -285,6 +292,7 @@
         <section class="container">
             <div> 
                 <h1 class="h1">Testimonials</h1>
+                <!--este div podria ser un article-->
                    <div class="testimonial"> 
                        <img src="../TP1 - copia/img/testimonial-1.jpg" class="testimonial-1">
                          <h2>Saul Goodman</h2>
@@ -380,6 +388,7 @@
              <div class="conten-info">
             <div class="icono">
                 <i class="fas fa-map-marker-alt"></i>
+                <!--p podria ser <address>-->
                 <p class="p1">A108 Adam Street, NY 535022</p>
             </div>
             <div class="icono">
@@ -434,6 +443,7 @@
             <div class="footer-info">
                 <h2>CONTACT US</h2>
                 <ul class="p2" >
+                    <!--podria ser un <address>-->
                     <li >A108 Adam Street </li>
                     <li >  New York, NY 535022</li>
                     <li > United States </li>

@@ -9,30 +9,34 @@ h1, h2, h3, h4, h5, h6{
 p{
     font-family: "Open Sans", sans-serif;
 }
-
+/**
+* Modifique las llamadas a las secciones y agregue la llamada a este archivo compilado
+  en el html, pero revisenlo porque ninguna de las imagenes funciona ni todos los estilos
+  estan correctamente andando.
+*/
 //SECTIONS//
 
-@import "../sass/sections/hero";
-@import "../sass/sections/about-us"; 
-@import "../sass/sections/services";
-@import "../sass/sections/whyUs";
-@import "../sass/sections/menu";
-@import "../sass/sections/dropdown";
-@import "../sass/sections/menu-mobile";
-@import "../SASS/sections/boton-flotante";
+@import "sections/hero";
+@import "sections/about-us"; 
+@import "sections/services";
+@import "sections/whyUs";
+@import "sections/menu";
+@import "sections/dropdown";
+@import "sections/menu-mobile";
+@import "sections/boton-flotante";
 
 //COMMON// 
 
-@import "../sass/common/variables";
+@import "common/variables";
 
 //COMPONENTS//
 
-@import "../sass/components/services-icons";
-@import "../sass/components/cards";
+@import "components/services-icons";
+@import "components/cards";
 
 //MIXINS//
 
-@import "../sass/common/mixins";
+@import "common/mixins";
 
 //FONTS//
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
